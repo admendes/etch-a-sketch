@@ -1,0 +1,57 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+body {
+    color: rgb(226, 215, 215);
+    background-color: rgb(67, 71, 71);
+    font-family: monaco, Consolas, Lucida Console, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+    font-size: 16px;
+    min-width: 600px;
+}
+ 
+h3 {
+    text-align: center;
+    font-size: 32px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+  
+#container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    max-width: 500px;
+    min-height: 500px;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    border: 8px solid #4c56af;
+}
+
+#controls {
+    text-align: center;
+}
+  
+.grid-item {
+    border: 1px solid black;
+    background-color:  rgb(226, 215, 215);
+    text-align: center;
+}
+
+button {
+    background-color: #4c56af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 2px;
+    cursor: pointer;
+}
